@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_margin="5dp"
+    android:orientation="vertical"
+    >
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Age : "
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:textColor="#017374"
+        android:gravity="left"
+
+        />
+
+    <EditText
+        android:id="@+id/age"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="age"
+        android:layout_marginBottom="20dp"
+        android:inputType="numberDecimal"
+
+        />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Sex : "
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:textColor="#017374"
+        android:gravity="left"
+        />
+
+    <RadioGroup
+        android:id="@+id/SexGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:layout_marginBottom="20dp">
+
+
+        <RadioButton
+            android:id="@+id/H"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="M"
+            android:textSize="14dp"
+            />
+
+        <RadioButton
+            android:id="@+id/F"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="F"
+            android:textSize="14dp"
+            />
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Blood Pressure : "
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:textColor="#017374"
+        android:gravity="left"
+        />
+
+    <RadioGroup
+        android:id="@+id/BPGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:layout_marginBottom="20dp"
+        >
+
+    <RadioButton
+        android:id="@+id/normal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="NORMAL"
+        android:textSize="14dp"
+        />
+
+    <RadioButton
+        android:id="@+id/high"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="HIGH"
+        android:textSize="14dp"
+        />
+
+        <RadioButton
+            android:id="@+id/low"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="LOW"
+            android:textSize="14dp"
+            />
+
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Blood Cholesterol : "
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:textColor="#017374"
+        android:gravity="left"
+        />
+
+    <RadioGroup
+        android:id="@+id/BCGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:layout_marginBottom="20dp"
+        >
+
+        <RadioButton
+            android:id="@+id/BCnormal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="NORMAL"
+            android:textSize="14dp"
+            />
+
+        <RadioButton
+            android:id="@+id/BChigh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="HIGH"
+            android:textSize="14dp"
+            />
+    </RadioGroup>
+
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Na : "
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:textColor="#017374"
+        android:gravity="left"
+        />
+
+    <EditText
+        android:id="@+id/Na"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="Blood sodium concentration ..."
+        android:inputType="numberDecimal"
+        android:layout_marginBottom="20dp"
+        />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Ka :"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:textColor="#017374"
+        android:gravity="left"
+        />
+
+    <EditText
+        android:id="@+id/K"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="Blood potassium concentration ..."
+        android:inputType="numberDecimal"
+        android:layout_marginBottom="20dp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+    <Button
+        android:id="@+id/prediction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#1F3B4D"
+        android:text="Predict"
+        android:layout_marginRight="10dp"
+        />
+
+    <Button
+        android:id="@+id/raz"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#1F3B4D"
+        android:text="Initialize"
+        />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:textColor="#017374"
+        android:text=""
+        />
+
+</LinearLayout>
